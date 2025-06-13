@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Trivia de Planetas</title>
+  <title>Planetas Interiores</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
@@ -29,6 +29,19 @@
       font-size: 2rem;
       margin: 20px 0;
     }
+    h2 {
+        font-size: 2rem;
+      margin: 20px 0;
+      color: blueviolet;
+      text-align: center;
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 15px 0;
+      color: red;
+      text-align: center;
+    }
+
     .question {
       font-size: 1.3rem;
       margin: 20px 0;
@@ -42,6 +55,7 @@
       font-size: 1rem;
       background-size: cover;
       background-position: center;
+      background-color: aqua;
       position: relative;
       overflow: hidden;
       transition: transform 0.2s, box-shadow 0.3s;
@@ -80,9 +94,9 @@
 <canvas id="stars"></canvas>
 
 <div class="container">
-  <h1>Trivia de Planetas</h1>
+  <h2>Planetas Interiores</h2>
   <div id="game">
-    <button class="btn" onclick="startGame()"><span>Comenzar</span></button>
+    <button class="btn" onclick="startGame()"><span><h3>Comenzar</h3></span></button>
   </div>
   <div id="result"></div>
 </div>
@@ -130,7 +144,7 @@
   const questions = [
     { question: "¿Cuál es el planeta más cercano al Sol?", options: ["Venus", "Mercurio", "Tierra", "Marte"], answer: "Mercurio" },
     { question: "¿Qué planeta es conocido como el planeta rojo?", options: ["Marte", "Venus", "Tierra", "Mercurio"], answer: "Marte" },
-    { question: "¿En qué planeta vivimos?", options: ["Venus", "Mercurio", "Tierra", "Marte"], answer: "Tierra" },
+    { question: "¿Qué planeta tiene mayor gravedad?", options: ["Venus", "Mercurio", "Tierra", "Marte"], answer: "Tierra" },
     { question: "¿Cuál tiene la atmósfera más caliente?", options: ["Venus", "Tierra", "Marte", "Mercurio"], answer: "Venus" },
     { question: "¿Qué planeta tiene días más largos que su año?", options: ["Venus", "Tierra", "Marte", "Mercurio"], answer: "Venus" }
   ];
@@ -176,7 +190,7 @@
     setTimeout(showQuestion, 800);
   }
 </script>
-<p>Juego realizado por: Martina, Lautaro, Matilda, Giannina, Matheo y Zaira</p>
+<p><h2>Juego realizado por: Martina, Lautaro, Matilda, Giannina, Matheo y Zaira</h2></p>
 
 </body>
 </html>
